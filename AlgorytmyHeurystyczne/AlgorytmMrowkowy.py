@@ -69,9 +69,9 @@ def WybierzNowaPozycje(i, mrowki, feromony, wymiar, alpha=2, sigma=0.1):
 
     return nowa_pozycja
 
-def AlgorytmMrowkowy(funkcja, wymiar, przedzial, min_max, populacja_mrowek = 200, wspolczynnik_wyparowania = 0.35 ,ilosc_cykli = 100):
+def AlgorytmMrowkowy(funkcja, wymiar, przedzial, min_max, populacja_mrowek = 200, ilosc_cykli = 100, wspolczynnik_wyparowania = 0.35):
     mrowki, feromony = InicjalizacjaMrowiska(funkcja, wymiar, przedzial, populacja_mrowek)
-    feromony = AktualizacjaFeromonow(feromony, mrowki, wymiar, wspolczynnik_wyparowania)
+    #feromony = AktualizacjaFeromonow(feromony, mrowki, wymiar, wspolczynnik_wyparowania)
 
     najlepsza_mrowka = min(mrowki, key=lambda m: m[0]) if min_max == "minimum" else max(mrowki, key=lambda m: m[0])
 

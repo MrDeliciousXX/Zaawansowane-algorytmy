@@ -82,6 +82,9 @@ INF = float('inf')
 #f4 = Library.AlgorytmNietoperza(Fn.rosenbrock, 3, [-100,100], "minimum",2000, 300)
 #print(f"\n\nMinimum w punkcie: {f4[1]}\nWartość funkcji w punkcie: {f4[0]}\n")
 
+f5 = Library.AlgorytmRoznicowy(Fn.hgbat, 2, [-100, 100], "minimum", 200, 100)
+print(f"Minimum w punkcie: {f5[1]}\nWartość funkcji w punkcie: {f5[0]}\n")
+
 # -----Algorytmy kalendarza-----
 #for i in range (2010, 2031):
 #    print(f"rok {i}")
