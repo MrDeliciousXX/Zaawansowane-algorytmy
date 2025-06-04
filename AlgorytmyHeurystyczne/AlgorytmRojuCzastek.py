@@ -75,4 +75,4 @@ def AlgorytmRojuCzastek(funkcja, wymiar, przedzial, min_max = "minimum", populac
 
     najlepsze_rozwiazanie = min(zip(p_best_wartosci, p_best), key=lambda x: x[0]) if min_max == "minimum" else max(zip(p_best_wartosci, p_best), key=lambda x: x[0])
 
-    return najlepsze_rozwiazanier
+    return najlepsze_rozwiazanie
